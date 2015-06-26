@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new params.require(:user).permit(:email, :name, :password, :password_confirmation)
-    @user.key = SecureRandom.hex(8) # generate key and save it with user's info
+    @user.key = SecureRandom.hex(8) # generate key and save it
 
     if @user.save
       render status: 201
