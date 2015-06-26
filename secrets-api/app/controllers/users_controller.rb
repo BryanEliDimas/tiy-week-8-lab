@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     @user.key = SecureRandom.hex(8) # generate key and save it with user's info
 
     if @user.save
-      render json: {message: "We good. You're signed up!"}, status: 201
+      render status: 201
     else
       render json: {message: @user.errors}, status: 422
     end
