@@ -8,7 +8,7 @@ class SecretsController < ApplicationController
   end
 
   def index
-    @secrets = Secret.all.includes(:user)
+    @secrets = Secret.all.includes(:user).last(20) # latest 20 secrets
   end
 
   def create
@@ -19,7 +19,7 @@ class SecretsController < ApplicationController
       render status: 201
     else
       # error message
-      render json: {message: "Couldn't save new secret. :/ \n #{@user.errors}"}, status: 422
+      render json: {message: "Couldn't save new secret. :/"}, status: 422
     end
   end
 end
