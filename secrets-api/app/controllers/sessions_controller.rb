@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
       # No need to anything here, everything's good
     else
       # send error message as json
-      render json: {auth: "Couldn't log you in :/"}, status: 422
+      render json: {message: "Couldn't log you in :/"}, status: 422
     end
   end
-  
+
 end
