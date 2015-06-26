@@ -1,11 +1,6 @@
 class SecretsController < ApplicationController
-  before_action do
-    authorized_user
-  end
 
-  before_action do
-    valid_api
-  end
+  before_action :authorized_user, :valid_api, only: [:create]
 
   def index
     @secrets = Secret.all.includes(:user).last(20) # latest 20 secrets
