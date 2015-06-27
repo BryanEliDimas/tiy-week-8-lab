@@ -7,9 +7,10 @@ class SessionsController < ApplicationController
 
     if (@user) && (@user.authenticate password)
       # No need to anything here, everything's good
+      render status: 200
     else
       # send error message as json
-      render json: {message: "Couldn't log you in :/"}, status: 422
+      render json: {message: "Couldn't log you in bro - api:/"}, status: 422
     end
   end
 

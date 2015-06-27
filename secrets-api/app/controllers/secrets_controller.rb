@@ -7,11 +7,11 @@ class SecretsController < ApplicationController
   end
 
   def create
-    @secret = Secret.new params.require(:secret).permit(:content)
+    @secret = Secret.new params.require(:secret).permit(:content, :user_id)
 
     if @secret.save
       # good
-      render status: 201
+      render :index, status: 201
     else
       # error message
       render json: {message: "Couldn't save new secret. :/"}, status: 422
