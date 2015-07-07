@@ -6,9 +6,6 @@ Description
 
 Happy Appy Apis (Pair Projects)
 
-Objectives
-----------
-
 
 ### Objectives
 
@@ -18,11 +15,8 @@ After completing this assignment, you be able to effectively
 -	Demonstrate authorizing API calls via api application tokens
 -	Demonstrate personalizing API calls for specific user tokens
 
-Details
+Abilities
 -------
-### Backend
-
-#### Rails API Abilities
 
 -	Ability to Create a User (email/name/secure-password) which sets a secure random key when created.
 -	Ability to Create a "Sshhh" model where users can post "sshhh" (secrets)
