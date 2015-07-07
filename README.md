@@ -4,8 +4,7 @@ APIs (Pair Projects)
 Description
 -----------
 
-Abilities
--------
+### Abilities
 
 -	Ability to Create a User (email/name/secure-password) which sets a secure random key when created.
 -	Ability to Create a "Sshhh" model where users can post "sshhh" (secrets)
