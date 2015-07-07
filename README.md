@@ -1,6 +1,3 @@
-APIs (Pair Projects)
-===============================
-
 Description
 -----------
 
