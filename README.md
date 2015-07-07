@@ -4,7 +4,7 @@ Description
 ### Abilities
 
 -	Ability to Create a User (email/name/secure-password) which sets a secure random key when created.
--	Ability to Create a "Sshhh" model where users can post "sshhh" (secrets)
+-	Ability to Create a "Sshhh" model where users can post secrets
 -	Ability to Create Users
 -	Ability to sign in
 -	Ability to post a Secret
